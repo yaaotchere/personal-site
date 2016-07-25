@@ -1,0 +1,33 @@
+div.sub_heading_wrapper {
+  font-size: $chunkytext;
+}
+
+div.section_content_wrapper.home {
+  background: $accentcolour;
+  padding: 20px;
+}
+
+h2.headline {
+  clear: both;
+}
+
+div.yaa-pic {
+  height: 200px;
+  background: $accentcolour;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure.yaa-pic-circular img {
+ border-radius: 50%;
+}
+
+div.content_wrapper_gutter {
+ padding: 15px 15px 0px 15px;
+}
+
+div.second_home {
+  text-align: center;
+}
+

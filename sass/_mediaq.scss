@@ -1,0 +1,163 @@
+/* Landscape phones and down */
+@media (min-width: 480px) {
+  //home page
+  h2.headline{
+    font-size: 36px;
+  }
+
+  div.yaa-pic {
+    background: none;
+    float: left;
+    margin: 0 30px 30px 15px;
+  }
+
+  div.content_wrapper_gutter {
+    padding-top: 13px;
+  }
+
+  //about
+  h2.highlight {
+    background:none;
+  }
+
+  body.page-id-24 div.content_wrapper_gutter p {
+    margin: 0px;
+  }
+
+  //work with me
+
+  div.content_wrapper_gutter.main, div.content_wrapper_gutter.whyme {
+    float:left;
+    width: 50%;
+  }
+
+  div.content_wrapper_gutter.rationale {
+    clear: both;
+  }
+
+  body.page-id-214 div.content_wrapper_gutter.rationale {
+    border: 4px solid $accentcolour;
+  }
+
+  //blog index
+  div.blog_thumbnail_wrapper {
+    margin-bottom: 20px;
+  }
+
+  div.line {
+    margin-bottom: 40px;
+    width: 40%;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) {
+  //home page
+  h1.main_site_title {
+    text-align: center;
+    font-size: 30px;
+  }
+  h2.headline {
+    font-size: 44px;
+  }
+
+  div.yaa-pic {
+    margin: 0 30px 0px 15px;
+  }
+
+  div.content_wrapper_gutter {
+    padding-top: 14px;
+  }
+
+  div.cta_box {
+    margin: 20px 15px;
+  }
+
+  //portfolio
+  div.portfolio_wrapper {
+    //width: 50%;
+    //margin: 0 auto;
+    //float: left;
+  }
+
+  figure.portfolio_fig {
+    height: 300px;
+  }
+
+  //blog
+  div.line {
+    width: 20%;
+  }
+
+  body.blog section.entry-content {
+    float: left;
+    margin-right: 20px;
+  }
+
+
+  div.teaser {
+    display: block;
+    height: 300px;
+    padding-top: 50px;
+  }
+}  
+
+/* Portrait tablet and small desktops */
+@media (min-width: 940px) {
+  header {
+    padding-top: 4px;
+  }
+
+  h1.main_site_title {
+    margin-top: 0px;  
+  }
+  
+
+  //nav
+  #menu-primary-nav {
+    display: block;
+  }
+
+  ul.nav, label[for="toggle"] {
+    display: none;
+  }
+
+  h2.headline {
+    padding-top: 20px;
+  }
+  
+  //action box
+  div.column_large, div.action_box {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    height: 320px;
+  }
+
+  div.action_box {
+    background: $accentcolour;
+  }
+
+  div.mab-content {
+    margin-top: 55px;
+  }
+
+  div.second_home {
+    clear: both;
+  }
+
+  div.cta_box {
+    margin: 65px 35px;
+  }
+
+  //blog
+  body.blog section.entry-content {
+    margin: 0px 100px 0px 100px;
+  }
+
+  div.teaser {
+    padding-right: 100px;
+  }
+
+}

@@ -1,0 +1,29 @@
+div.optin_short {
+  height: 120px;
+  width: 100%;
+  background: $accentcolour;
+  padding: 35px 25px 25px 25px;
+}
+
+div.optin_hook {
+  font-weight: 400;
+  width: 190px;
+  float: left;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+div.grabitbutton {
+  color: white;
+  height: 50px;
+  width: 70px;
+  border: solid 1px white;
+  text-align: center;
+  padding-top: 15px;
+  float: right;
+}
+
+div.grabitbutton:after {
+  content:'';
+  clear: both;
+}

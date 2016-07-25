@@ -1,0 +1,95 @@
+ul.menu, .menu ul {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		margin-right: 10px;
+		a {
+			color: #333;
+			padding: 10px;
+		}
+	}
+}
+
+#menu-primary-nav {
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  margin-top: 20px;
+  text-transform: uppercase;
+  display: none;
+}
+
+#menu-primary-nav a {
+  text-decoration: none;
+  padding: 30px;
+  font-size: $smalltext;
+}
+
+
+//slide out nav
+
+.wrapper {
+      transition: all 0.5s;
+      position: relative; /* relative allows us to use T R B L */
+      left:0; /* Set a default value of 0 so we can transition to -30% */
+    }
+
+    ul.nav {
+      //background: black;
+      list-style: none; /* Take bullets off */
+      padding: 0; /* take padding off */
+      position: fixed;
+      z-index: 2;
+      width:60%; /*note how width and right are the same values*/
+      right:-60%; /* Off the screen as wide as you are */
+      top:0;
+      height:100%;
+      margin: 0;
+      transition:all 0.5s; /* magic to animate it */
+    }
+
+    ul.nav a {
+      border-bottom:1px solid $accentcolour;
+      display: block;
+      font-size: $titlefontsizemobile;
+      padding:20px;
+      transition:all 0.3s; /*we also transition the background colour here*/
+    }
+
+    ul.nav a:hover {
+      background: $accentcolour;
+    }
+
+    /*
+      When the input is checked
+      grab the next sibling nav with the + selector
+    */
+    input#toggle:checked + ul.nav {
+      right:0; /* when the checkbox is checked, put the ul.nav back to right:0; It was at right:-30%;*/
+    }
+
+    /*
+      ~ means grab the next eventual sibling
+    */
+    input#toggle:checked ~ .wrapper {
+      left:-60%; /* When the input is checked, slide the wrapper over as well */
+    }
+
+    input#toggle {
+      display: none; /* hide the input, we don't need to see it */
+    }
+
+    label[for="toggle"] {
+      /*position the menu so that it doesn't slide off screen when we open it*/
+      position: fixed;
+      top:0px;//change later
+      //left: 70%;
+      color: black;
+      height: 45px;
+      width: 100%;
+      background: $accentcolour;
+      padding-top: 10px;
+      padding-left: 10px;
+      z-index: 400;
+    }

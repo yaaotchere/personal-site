@@ -1,0 +1,20 @@
+#gform_submit_button_1 {
+  height: 50px;
+  padding: 15px;
+  background: $colorC;
+  border: none;
+  color: $white;
+}
+
+section.contact {
+  margin-top: -60px;
+}
+
+div.content_wrapper_gutter.contact p {
+  padding: 0px 15px;
+}
+
+div.social_wrapper a, div.social_media_footer a {
+  text-decoration: none;
+  font-size: $chunkytext;
+}

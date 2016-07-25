@@ -1,0 +1,18 @@
+
+div.cta_box {
+  height: 150px;
+  width: 215px;
+  border: 6px solid $accentcolour;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.cta_box a {
+  text-decoration: none;
+}
+
